@@ -1,0 +1,64 @@
+body{
+    background: url(./messi.jpg);
+
+    background-size: 100%;
+}
+.titulo{
+    font-family: 'cinzel', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 450%;
+    text-align: center;
+    color: #1f618d;
+}
+ul li{
+    list-style: none;
+    color: #0b5383f6;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 200%;
+    font-style: oblique;
+}
+li{
+    padding: 5%;
+}
+h2{
+    color: #0b5383f6;
+    font-family: 'cinzel', serif;
+    
+}
+
+.grid-imagenes{
+    display: grid;
+    grid-template-rows: repeat(3, 50%);
+    gap: 25px;
+}
+.grid-imagenes{
+    text-align: center;
+}
+.abrazados{
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+
+.equipito{
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+.copa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+h2{
+    grid-column: 1 / 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+@media(max-width:620px){
+    .grid-imagenes{
+        grid-template-columns: 1, 100% ;
+    }
+}
