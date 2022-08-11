@@ -66,8 +66,9 @@ h2{
     align-items: center;   
 }
 
-@media(max-width:620px){
+@media all and (min-width: 620px){
     .grid-imagenes{
-        grid-template-columns: 1, 100% ;
+        display: inline-block;
+        
     }
 }
