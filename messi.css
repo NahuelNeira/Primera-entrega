@@ -77,22 +77,3 @@ footer{
     font-weight: bold;
     
 }
-
-@media screen all and (max-width:620px){
-    .menu ul li{
-      flex-direction: column;
-     }
-    .imagen{
-        display: inline-block;
-    }
-    .leo{
-        width: 100;
-        height: 80;
-    }
-    .video{
-        width: 100;
-        height: 80;
-
-    }
-   
-    }  
