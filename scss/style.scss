@@ -1,24 +1,69 @@
-@import './base/variables';
-@import './componentes/footer';
+@import "./base/variables";
+@import "./componentes/footer";
+@import "./base/extend";
+@import "./base/maps";
+@import "./base/listas";
+@import "./base/mixin";
+body {
+  background: url("../css/messi.jpg");
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
 
-
-
-
-h1{
-    color: #1F618D;
-}
-nav{
-    display: flex;
-    padding: 20px 30px;
-    list-style: none;
-    color: #0b5383f6;
-    text-decoration: none;
-    display: inline-block;
+  h1 {
+    color: #1f618d;
+    font-style: normal;
     font-weight: bold;
-    font-size: 200%;
-    font-style: oblique;
-    li{
-        padding: 5%;
-    }
+    font-size: 450%;
+    text-align: center;
+    font-family: "Cinzel", serif;
+  }
 
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    color: #1f618d;
+    font-style: italic;
+    font-size: 300%;
+    text-align: start;
+    font-weight: bold;
+    font-family: "Cinzel", serif;
+  }
+
+  p {
+    color: rgba(122, 73, 13, 0.733);
+    font-size: 150%;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    padding: 5%;
+    @include hover{
+        color: black;
+    }
+  }
+  .imagen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20%;
+  }
+}
+
+nav {
+  display: flex;
+  padding: 20px 30px;
+  list-style: none;
+  color: #0b5383f6;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  li {
+    text-decoration: none;
+    padding: 5%;
+    @include hover{
+        color: yellow;
+    }
+  }
 }
